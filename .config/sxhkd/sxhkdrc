@@ -1,11 +1,20 @@
 alt + Return
 	$TERMINAL
+
 alt + w 
 	$BROWSER
+
+alt + f
+	"firefox"
 
 super + m
 	"signal-desktop"
 
+super + n
+	"obsidian"
+
 super + {equal, minus, BackSpace}
 	$HOME/bin/volume.sh {up, down, toggle}
 
+super + b
+	$HOME/bin/bluetooth-menu.sh
