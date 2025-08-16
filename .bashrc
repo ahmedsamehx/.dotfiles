@@ -29,7 +29,7 @@ alias ls='ls --color=auto'
 # neovim
 alias vi='nvim'
 
-alias ll='ls -l'
+alias ll='ls -al'
 alias i='doas xbps-install -S'
 alias u='i; doas xbps-install -u xbps; doas xbps-install -u'
 alias r='doas xbps-remove -R'
