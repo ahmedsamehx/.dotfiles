@@ -1,0 +1,11 @@
+alt + Return
+	$TERMINAL
+alt + w 
+	$BROWSER
+
+super + m
+	"signal-desktop"
+
+super + {equal, minus, BackSpace}
+	$HOME/bin/volume.sh {up, down, toggle}
+
