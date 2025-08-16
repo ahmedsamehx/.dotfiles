@@ -1,8 +1,8 @@
 alt + Return
 	$TERMINAL
 
-alt + w 
-	$BROWSER
+super + b
+	$HOME/bin/bluetooth-menu.sh
 
 alt + f
 	"firefox"
@@ -13,8 +13,13 @@ super + m
 super + n
 	"obsidian"
 
+super + p
+	"passmenu"
+
+alt + w 
+	$BROWSER
+
 super + {equal, minus, BackSpace}
 	$HOME/bin/volume.sh {up, down, toggle}
 
-super + b
-	$HOME/bin/bluetooth-menu.sh
+
