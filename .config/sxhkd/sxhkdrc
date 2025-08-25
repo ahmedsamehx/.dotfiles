@@ -1,14 +1,20 @@
-alt + Return
+super + Return
 	$TERMINAL
 
 super + b
 	$HOME/bin/bluetooth-menu.sh
 
-alt + f
+super + shift + f
+	$TERMINAL -e lf 
+
+super + f
 	"firefox"
 
 super + m
 	"signal-desktop"
+
+super + shift + m
+	$HOME/bin/mount.sh
 
 super + n
 	"obsidian"
@@ -16,10 +22,29 @@ super + n
 super + p
 	"passmenu"
 
-alt + w 
+alt + shift + p
+	mpv $(xclip -o)
+
+super + v
+	$TERMINAL -e nvim
+
+super + w 
 	$BROWSER
 
-super + {equal, minus, BackSpace}
+alt + {equal, minus, BackSpace}
 	$HOME/bin/volume.sh {up, down, toggle}
+
+Print
+	maim -u -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+
+ctrl + Print
+	maim -s | xclip -selection clipboard -t image/png
+
+super + Print
+	$HOME/bin/screencast.sh
+
+super + shift + BackSpace
+	$HOME/bin/exit.sh
+
 
 

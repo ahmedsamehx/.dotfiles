@@ -13,11 +13,14 @@ export BROWSER="brave-browser"
 export TERMINAL="st"
 export READER="zathura"
 export FILE="lf"
+export MANPAGER='nvim +Man!'
 
 export PATH="$HOME/bin:$PATH"
 
 export ZDOTDIR="$HOME/.config/zsh"
-export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
+export PASSWORD_STORE_DIR="$HOME/.password-store"
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+
 
 # XDG (اختياري لكن مفيد)
 #export XDG_CONFIG_HOME="$HOME/.config"
